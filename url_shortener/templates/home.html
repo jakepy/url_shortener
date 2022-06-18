@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+{% block title %}URL Shortener{% endblock %}
+
+{% block content %}
+<form action="#" method="post">
+    <label for="url">Enter URL</label>
+
+    <input 
+        type="url" 
+        name="url-link" 
+        id="url"
+        placeholder="https://makemeshorterplease.com/2098csDFsz9cZC0Cds"
+        pattern="https://.*"
+        size="50"
+        required>
+    <input type="submit" value="submit" class="btn btn-primary">
+    <!-- <hr>
+    <label for="suffix">Enter Suffix</label>
+    <input 
+        type="url" 
+        name="nn" 
+        id="url"
+        placeholder="Enter URL Suffix"
+        pattern="https://.*"
+        size="30"
+        required>
+    <input type="submit" value="submit" class="btn btn-primary">
+ -->
+
+</form>
+{% endblock %}
